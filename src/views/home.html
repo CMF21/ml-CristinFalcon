@@ -6,12 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre CMF</title>
     <link rel="stylesheet" href="/public/css/style.css"><!-- linkenado css -->
+    <!--linkenado fuente google fonts(roboto400)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <!-- linkenado los iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 
 <body><!-- contenido de la pagina  -->
     <header><!-- cabecera -->
-
+        <img src="/img/logo-mercado-liebre.svg" alt="imgLogo"><!-- logo -->
+        <div><!--lugar para poner la barra de busquda-->
+            <input type="text" placeholder="Buscar productos,marcas" id="barraBusqueda">
+            <button class="boton-busqueda"><i class="fas fa-search"></i></button><!--icono lupa-->
+        </div>
+        <p><i class="fas fa-hand-holding"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <div><!--search navar-->
+            <ul id="opciones">
+                <li><a href=""> Ofertas</a></li>
+                <li><a href=""> Tiendas Oficiales</a></li>
+                <li><a href=""> Vender</a></li>
+                <li><a href=""> Ayuda</a></li>
+            </ul>
+            <!--la etiqueta i es el link de iconos-->
+            <!--login navar-->
+            <ul id="opciones">
+                <li><a href="/register"> Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login"> Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="/home"> Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </div>
     </header><!-- fin de la cabecera -->
     <main><!-- cuerpo -->
 
