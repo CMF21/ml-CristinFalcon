@@ -1,0 +1,13 @@
+:root{ /* root: variables CSS personalizadas en el elemento raíz*/
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+*{ /* el selector * aplica para todas las etiquetas */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
