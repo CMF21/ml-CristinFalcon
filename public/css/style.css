@@ -1,3 +1,5 @@
+/* utilizamos la estrategia mobile first */
+
 :root{ /* root: variables CSS personalizadas en el elemento raíz*/
     --Amarillo: #EAC926;
     --Azul: #03264C;
@@ -21,6 +23,7 @@ header{
 }
 ul li {
     text-decoration: none;
+    display: none;
 }
 ul li a{
     color: black;
@@ -32,7 +35,7 @@ ul li a{
     width: 50%;
 }
 .barraBusqueda{
-    width: 50%;
+    width: 70%;
 }
 .titulares{
     font-size:24px ;
@@ -45,6 +48,7 @@ ul li a{
 }
 .descripcion{
     font-size: 16px;
+    display: none;
 }
 #banner{
     margin-top: 15px;
@@ -73,8 +77,7 @@ main{
 }
 main article{
     margin: 10px 0;
-    background-color: white;
-    
+    background-color: white;    
 }
 main img{
     width: 100%;
@@ -109,4 +112,21 @@ footer section i {
 }
 /* fin footer */
 
+/* tablet ancho minimo de 361px  */
+@media(min-width: 361px ){
+    ul li {
+        display: block;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgba(100,100,100);
+    }
+    .descripcion{
+        display: block;
+    }
+
+}
+/* desktop ancho minimo de 769px */
+@media (min-width: 769px){
+
+}
 
