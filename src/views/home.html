@@ -17,12 +17,14 @@
 
 <body><!-- contenido de la pagina  -->
     <header><!-- cabecera -->
-        <img src="/img/logo-mercado-liebre.svg" alt="imgLogo"><!-- logo -->
-        <div><!--lugar para poner la barra de busquda-->
-            <input type="text" placeholder="Buscar productos,marcas" id="barraBusqueda">
-            <button class="boton-busqueda"><i class="fas fa-search"></i></button><!--icono lupa-->
+        <div class="encabezado">
+            <img class="logoMl" src="/img/logo-mercado-liebre.svg" alt="imgLogo"><!-- logo -->
+            <div class="barraBusqueda"><!--lugar para poner la barra de busquda-->
+                <input type="text" placeholder="Buscar productos,marcas" id="barraBusqueda">
+                <button class="boton-busqueda"><i class="fas fa-search"></i></button><!--icono lupa-->
+            </div>
+            <p id="compraEnCuotas"><i class="fas fa-hand-holding"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
-        <p><i class="fas fa-hand-holding"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         <div><!--search navar-->
             <ul id="opciones">
                 <li><a href=""> Ofertas</a></li>
@@ -38,10 +40,14 @@
                 <li><a href="/home"> Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </div>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <figure><!--Banner-->
+            <img src="img/img-home-banner.jpg" alt="banner" id="banner">
+        </figure>
     </header><!-- fin de la cabecera -->
-    <figure><!--Banner-->
-        <img src="img/img-home-banner.jpg" alt="banner" class="banner">
-    </figure>
+
     <main><!-- cuerpo -->
         <!--seccion basado en tu ultima vista-->
         <h2 class="titulares">Basado en tu ultima vista</h2>
@@ -138,8 +144,35 @@
                 </div>
             </article>
         </div><!--termina ofertas-->
+        <hr>
     </main><!-- fin del cuerpo -->
     <footer><!-- pie de la pagina -->
+        <section>
+            <!-- <i class="fa-solid fa-credit-card"></i> -->
+            <h3>Paga con tarjeta o en efectivo</h3>
+            <br>
+            <p>Con Mercado Liebre Cash, tenes cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                seguro!</p>
+        </section>
+        <br>
+        <section>
+            <!-- <i class="fa-solid fa-gift"></i> -->
+            <h3>Envío gratis desde los $2.500</h3>
+            <br>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                Mercado Puntos.</p>
+        </section>
+        <br>
+        <section>
+            <!-- <i class="fa-solid fa-user-shield"></i> -->
+            <h3>Seguridad de principio a fin</h3>
+            <br>
+            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre
+                protegid@
+            </p>
+        </section>
+        <br>
+        <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L </p>
     </footer>
 </body>
 

@@ -11,3 +11,52 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+header{
+    background-color: #EAC926;
+}
+ul li {
+    text-decoration: none;
+}
+ul li a{
+    color: black;
+}
+.encabezado{
+    padding: 15px;
+}
+.logoMl{
+    width: 50%;
+}
+.barraBusqueda{
+    width: 50%;
+}
+.titulares{
+    font-size:24px ;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+.descripcion{
+    font-size: 16px;
+}
+#banner{
+    width: 100%;
+}
+#compraEnCuotas{
+    text-align: center;
+    padding: 3%;
+}
+
+
+
+
+
+img{
+    width: 100%;
+}
