@@ -65,6 +65,36 @@ ul li a{
     border-radius: 3px;
 }
 /* fin header  */
+/* main */
+main{
+    width: 100%;
+    padding: 10%;
+    background-color: var(--Gris-claro);
+}
+main article{
+    margin: 10px 0;
+    background-color: white;
+    
+}
+main img{
+    width: 100%;
+}
+.infoProducto{
+    border-top: 1px solid var(--Gris-claro);
+    margin: 0 15px;
+    padding: 5%;
+    
+}
+.camion{
+    border: #39b54a solid 1px;
+    border-radius: 50%;
+    padding: 2%;
+    color: #39b54a;
+}
+.descuento{
+    color: var(--Verde);
+}
+/* fin main */
 /* footer */
 footer{ 
     text-align: center;
@@ -80,6 +110,3 @@ footer section i {
 /* fin footer */
 
 
-img{
-    width: 100%;
-}
