@@ -15,6 +15,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
+/* header  */
 header{
     background-color: #EAC926;
 }
@@ -46,15 +47,37 @@ ul li a{
     font-size: 16px;
 }
 #banner{
+    margin-top: 15px;
     width: 100%;
+    display: flex;
 }
 #compraEnCuotas{
     text-align: center;
     padding: 3%;
 }
+#burgerMenuCaja{
+    text-align: center;
+}
+#burgerMenu{
+    color: #ebebeb;
+    background-color: #1259c3;
+    padding: 8px;
+    border-radius: 3px;
+}
+/* fin header  */
+/* footer */
+footer{ 
+    text-align: center;
+    padding: 10%;
+    color: #666;
+}
+footer section i {
+    color: #1259c3;
+    font-size: 1.5rem;
+    padding: 0.5rem;
 
-
-
+}
+/* fin footer */
 
 
 img{
