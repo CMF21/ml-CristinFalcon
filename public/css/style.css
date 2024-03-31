@@ -1,6 +1,7 @@
 /* utilizamos la estrategia mobile first */
 
-:root{ /* root: variables CSS personalizadas en el elemento raíz*/
+:root {
+    /* root: variables CSS personalizadas en el elemento raíz*/
     --Amarillo: #EAC926;
     --Azul: #03264C;
     --Celeste: #1259c3;
@@ -8,125 +9,289 @@
     --Gris-claro: #ebebeb;
     --Verde: #39b54a;
 }
-*{ /* el selector * aplica para todas las etiquetas */
+
+* {
+    /* el selector * aplica para todas las etiquetas */
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
+
 /* header  */
-header{
+header {
     background-color: #EAC926;
 }
+
+#searchNavar {
+    display: none;
+    justify-content: space-between;
+}
+
+.opciones {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2% 1% 2%;
+
+}
+
 ul li {
+    list-style: none;
+}
+
+ul li a {
     text-decoration: none;
-    display: none;
-}
-ul li a{
     color: black;
+    font-size: 60%;
+
 }
-.encabezado{
-    padding: 15px;
+
+.encabezado {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.logoMl{
+
+.logoMl {
     width: 50%;
+    padding: 2%;
 }
-.barraBusqueda{
-    width: 70%;
+
+.barraBusqueda {
+    width: 50%;
+    padding: 2%;
+    display: flex;
 }
-.titulares{
-    font-size:24px ;
+
+#inputBarraBusqueda {
+    width: 85%;
+    background-color: white;
+    border: none;
+    border-radius: 5% / 20% 0% 0% 20%;
+    padding: 3%;
 }
-.precio{
-    font-size: 18px;
+
+#lupa {
+    background-color: white;
+    border: none;
+    border-radius: 0% 25% 25% 0% / 15%;
+    padding: 2%;
+    color: #666;
 }
-.descuento{
-    font-size: 16px;
+
+.titulares {
+    font-size: 24px;
 }
-.descripcion{
-    font-size: 16px;
-    display: none;
-}
-#banner{
-    margin-top: 15px;
+
+#banner {
     width: 100%;
     display: flex;
 }
-#compraEnCuotas{
+
+#compraEnCuotas {
     text-align: center;
-    padding: 3%;
+    width: 1000%;
+    padding: 6%;
 }
-#burgerMenuCaja{
+
+#burgerMenuCaja {
+    font-size: 15px;
     text-align: center;
+    padding-bottom: 5%;
 }
-#burgerMenu{
+
+#burgerMenu {
     color: #ebebeb;
     background-color: #1259c3;
-    padding: 8px;
-    border-radius: 3px;
+    padding: 3%;
+    border-radius: 10%;
 }
+
 /* fin header  */
 /* main */
-main{
+main {
     width: 100%;
-    padding: 10%;
+    padding: 5%;
     background-color: var(--Gris-claro);
 }
-main article{
-    margin: 10px 0;
-    background-color: white;    
+
+.ultimaVista {
+    display: flex;
+    flex-wrap: wrap;
 }
-main img{
+
+.ofertas {
+    display: flex;
+    /* define el comportamiento flex cuando no hay espacio se va hacia abajo */
+    flex-wrap: wrap;
+
+}
+
+article {
+    margin: 10px 0;
+    background-color: white;
     width: 100%;
 }
-.infoProducto{
+
+main img {
+    width: 100%;
+    padding: 3%;
+}
+
+.infoProducto {
     border-top: 1px solid var(--Gris-claro);
-    margin: 0 15px;
     padding: 5%;
-    
+    position: relative;
 }
-.camion{
-    border: #39b54a solid 1px;
-    border-radius: 50%;
+
+.descuentoYDescripcion {
+    display: flex;
+
+}
+
+.precio {
+    font-size: 18px;
+    padding: 5px
+}
+
+.camion {
+    display: block;
+    font-size: 15px;
     padding: 2%;
+    width: 30px;
+    height: 30px;
+    border: #39b54a solid 1px;
+    border-radius: 55%;
     color: #39b54a;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    background-color: white;
+    /* transition: .60s; */
 }
-.descuento{
+
+.descuento {
     color: var(--Verde);
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 3px;
 }
+
+.descripcion {
+    font-size: 13px;
+    padding: 5px;
+    color: var(--Gris-oscuro);
+}
+
 /* fin main */
 /* footer */
-footer{ 
+footer {
     text-align: center;
     padding: 10%;
     color: #666;
 }
+
 footer section i {
     color: #1259c3;
     font-size: 1.5rem;
     padding: 0.5rem;
 
 }
+
 /* fin footer */
 
 /* tablet ancho minimo de 361px  */
-@media(min-width: 361px ){
-    ul li {
-        display: block;
+@media(min-width: 425px) {
+    #searchNavar {
+        display: flex;
     }
-    article{
-        box-shadow: 0px 0px 10px rgba(100,100,100);
+
+    #burgerMenuCaja {
+        display: none;
     }
-    .descripcion{
+
+    .encabezado {
+        padding: 2%;
+    }
+
+    .logoMl {
+        width: 33%;
+        padding: 1%;
+    }
+
+    .barraBusqueda {
+        width: 33%;
+        padding: 3%;
+    }
+
+    #compraEnCuotas {
+        width: 33%;
+        padding: 4% 0% 0 0%;
+        font-size: 60%;
+    }
+
+    .ultimaVista {
+        justify-content: space-around;
+    }
+
+    .ofertas {
+        justify-content: space-around;
+    }
+
+    .titulares {
+        color: #666;
+        padding: 0 2% 2% 2%;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgba(100, 100, 100);
+        width: 45%;
+    }
+
+    .descripcion {
         display: block;
     }
 
 }
+
 /* desktop ancho minimo de 769px */
-@media (min-width: 769px){
+@media (min-width: 769px) {
+    #compraEnCuotas {
+        padding: 4% 0% 0 0%;
+        font-size: 100%;
+    }
 
+    .barraBusqueda {
+        width: 33%;
+        padding: 3% 0% 3% 3%;
+    }
+
+    li {
+        width: 25%;
+        text-align: center;
+    }
+
+    ul li a {
+
+        font-size: 100%;
+    }
+
+    .opciones {
+        width: 40%;
+    }
+
+    article {
+
+        width: 22%;
+    }
+
+    footer {
+        padding: 5% 0 5% 0;
+        font-size: 100%
+    }
 }
-
