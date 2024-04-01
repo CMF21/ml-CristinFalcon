@@ -25,6 +25,8 @@ const publicPath = path.resolve(__dirname,'../public');
 app.use(express.static(publicPath));
 
 //levantando el servidor
-app.listen(3001,(req,res)=>{
-    console.log('servidor corriendo en http://localHost:3001');
+const port = process.env.PORT|| 3001
+console.log(process.env.PORT);
+app.listen(port,()=>{
+    console.log(`servidor corriendo en puerto ${port}`);
 })
