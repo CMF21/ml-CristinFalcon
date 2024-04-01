@@ -73,14 +73,15 @@ ul li a {
     background-color: white;
     border: none;
     border-radius: 5% / 20% 0% 0% 20%;
-    padding: 3%;
+    padding: 5%;
+    height: 100%;
 }
 
 #lupa {
     background-color: white;
     border: none;
     border-radius: 0% 25% 25% 0% / 15%;
-    padding: 2%;
+    padding: 3%;
     color: #666;
 }
 
@@ -162,7 +163,7 @@ main img {
 .camion {
     display: block;
     font-size: 15px;
-    padding: 2%;
+    padding: 6px;
     width: 30px;
     height: 30px;
     border: #39b54a solid 1px;
@@ -202,9 +203,59 @@ footer section i {
     padding: 0.5rem;
 
 }
-
 /* fin footer */
-
+/* register----------------- */
+form{
+    padding: 5%;
+}
+.inputtext{
+    width: 90%;
+    margin: 5%;
+    border: none;
+    padding: 4%;
+    border-radius: 3% / 15% 15% 15% 15%;
+}
+.subtitulo{
+    padding: 2%;
+}
+#perfilUsuario label{
+    padding: 5% 10% 5% 5%;
+}
+#perfilUsuario{
+    padding: 5%;
+}
+#intereses{
+    padding: 5%;
+}
+#intereses label{
+    padding: 0 5% 10% 5%;
+    margin-bottom: 2%;
+}
+#intereses label, #intereses input{
+    margin-bottom: 6%;
+}
+#inputFoto{
+    padding:0 0 4% 4%;
+}
+.botonesRegister{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.botonesRegister button{
+    width: 90%;
+    background-color :#1259c3;
+    color: #ebebeb;
+    margin: 5%;
+    padding: 4%;
+    border-radius: 3% / 15% 15% 15% 15%;
+    border: none;
+    align-items: center;
+}
+.botonesRegister button a{
+    text-decoration: none;
+    color:#ebebeb;
+}
 /* tablet ancho minimo de 361px  */
 @media(min-width: 425px) {
     #searchNavar {
@@ -216,7 +267,7 @@ footer section i {
     }
 
     .encabezado {
-        padding: 2%;
+        padding: 3%;
     }
 
     .logoMl {
@@ -234,7 +285,7 @@ footer section i {
         padding: 4% 0% 0 0%;
         font-size: 60%;
     }
-
+    
     .ultimaVista {
         justify-content: space-around;
     }
@@ -261,6 +312,9 @@ footer section i {
 
 /* desktop ancho minimo de 769px */
 @media (min-width: 769px) {
+    .encabezado {
+        padding: 1%;
+    }
     #compraEnCuotas {
         padding: 4% 0% 0 0%;
         font-size: 100%;
@@ -268,8 +322,10 @@ footer section i {
 
     .barraBusqueda {
         width: 33%;
+        height: 70%;
         padding: 3% 0% 3% 3%;
     }
+    
 
     li {
         width: 25%;
@@ -277,14 +333,15 @@ footer section i {
     }
 
     ul li a {
-
-        font-size: 100%;
+        font-size: 90%;
     }
 
     .opciones {
         width: 40%;
     }
-
+    #banner{
+        height: 30vh;
+    }
     article {
 
         width: 22%;
@@ -293,5 +350,23 @@ footer section i {
     footer {
         padding: 5% 0 5% 0;
         font-size: 100%
+    }
+    form{
+        margin-left: 15%;
+        padding: 0 15% 0% 15%;
+        width: 70%;
+        
+    }
+    .inputtext{
+        
+        width: 90%;
+        margin: 2%;
+        margin-left: 4%;
+        border: none;
+        padding: 4%;
+        border-radius: 3% / 15% 15% 15% 15%;
+    }
+    .botonesRegister button{
+        width: 40%;
     }
 }
