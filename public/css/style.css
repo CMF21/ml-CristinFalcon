@@ -173,7 +173,12 @@ main img {
     right: 20px;
     top: -15px;
     background-color: white;
-    /* transition: .60s; */
+    transition: 1s;
+}
+
+.camion:hover {
+    rotate: -90deg;
+
 }
 
 .descuento {
@@ -184,9 +189,15 @@ main img {
 }
 
 .descripcion {
+    display: none;
     font-size: 13px;
     padding: 5px;
     color: var(--Gris-oscuro);
+    transition: 10s;
+}
+
+.infoProducto:hover .descripcion {
+    display: block;
 }
 
 /* fin main */
@@ -195,6 +206,7 @@ footer {
     text-align: center;
     padding: 10%;
     color: #666;
+
 }
 
 footer section i {
@@ -203,48 +215,63 @@ footer section i {
     padding: 0.5rem;
 
 }
+footer section i:hover {
+    color: #0022AA;
+}
+
 /* fin footer */
 /* register----------------- */
-form{
+form {
     padding: 5%;
 }
-.inputtext{
+
+.inputtext {
     width: 90%;
     margin: 5%;
     border: none;
     padding: 4%;
     border-radius: 3% / 15% 15% 15% 15%;
 }
-.subtitulo{
+
+.subtitulo {
     padding: 2%;
 }
-#perfilUsuario label{
+
+#perfilUsuario label {
     padding: 5% 10% 5% 5%;
 }
-#perfilUsuario{
+
+#perfilUsuario {
     padding: 5%;
 }
-#intereses{
+
+#intereses {
     padding: 5%;
 }
-#intereses label{
+
+#intereses label {
     padding: 0 5% 10% 5%;
     margin-bottom: 2%;
 }
-#intereses label, #intereses input{
+
+#intereses label,
+#intereses input {
     margin-bottom: 6%;
 }
-#inputFoto{
-    padding:0 0 4% 4%;
+
+#inputFoto {
+    padding: 0 0 4% 4%;
 }
-.botonesRegister{
+
+.botonesRegister {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.botonesRegister button{
+
+.botonesRegister button {
     width: 90%;
-    background-color :#1259c3;
+    background-color: #1259c3;
     color: #ebebeb;
     margin: 5%;
     padding: 4%;
@@ -252,10 +279,16 @@ form{
     border: none;
     align-items: center;
 }
-.botonesRegister button a{
-    text-decoration: none;
-    color:#ebebeb;
+
+.botonesRegister button:hover {
+    background-color: #0022AA;
 }
+
+.botonesRegister button a {
+    text-decoration: none;
+    color: #ebebeb;
+}
+
 /* tablet ancho minimo de 361px  */
 @media(min-width: 425px) {
     #searchNavar {
@@ -285,7 +318,7 @@ form{
         padding: 4% 0% 0 0%;
         font-size: 60%;
     }
-    
+
     .ultimaVista {
         justify-content: space-around;
     }
@@ -300,13 +333,14 @@ form{
     }
 
     article {
-        box-shadow: 0px 0px 10px rgba(100, 100, 100);
+
         width: 45%;
     }
 
-    .descripcion {
-        display: block;
+    article:hover {
+        box-shadow: 0px 0px 10px rgba(100, 100, 100);
     }
+
 
 }
 
@@ -315,6 +349,7 @@ form{
     .encabezado {
         padding: 1%;
     }
+
     #compraEnCuotas {
         padding: 4% 0% 0 0%;
         font-size: 100%;
@@ -325,7 +360,7 @@ form{
         height: 70%;
         padding: 3% 0% 3% 3%;
     }
-    
+
 
     li {
         width: 25%;
@@ -339,26 +374,36 @@ form{
     .opciones {
         width: 40%;
     }
-    #banner{
+
+    #banner {
         height: 30vh;
     }
+
     article {
 
         width: 22%;
     }
 
     footer {
-        padding: 5% 0 5% 0;
-        font-size: 100%
+        padding: 4% 0;
+        font-size: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    form{
+    footer section{
+        width: 30%;
+        padding: 0 2% 2% 2%;
+    }
+
+    form {
         margin-left: 15%;
         padding: 0 15% 0% 15%;
         width: 70%;
-        
+
     }
-    .inputtext{
-        
+
+    .inputtext {
         width: 90%;
         margin: 2%;
         margin-left: 4%;
@@ -366,7 +411,8 @@ form{
         padding: 4%;
         border-radius: 3% / 15% 15% 15% 15%;
     }
-    .botonesRegister button{
+
+    .botonesRegister button {
         width: 40%;
     }
 }
