@@ -18,7 +18,9 @@
 <body>
     <header><!-- cabecera -->
         <div class="encabezado">
-            <img class="logoMl" src="/img/logo-mercado-liebre.svg" alt="imgLogo"><!-- logo -->
+            <a href="/" class="logoMl">
+                <img src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+            </a><!-- logo -->
             <div class="barraBusqueda"><!--lugar para poner la barra de busquda-->
                 <input type="text" placeholder="Buscar productos,marcas" id="inputBarraBusqueda">
                 <button id="lupa"><i class="fas fa-search"></i></button><!--icono lupa-->
@@ -92,7 +94,7 @@
             <br>
             <div id="inputFoto">
                 <h3 class="subtitulo">Foto</h3>
-            <input type="file" name="foto_de_usuario" id="fotoUsuario" accept="image/jpeg, image/png" required>
+                <input type="file" name="foto_de_usuario" id="fotoUsuario" accept="image/jpeg, image/png" required>
             </div>
             <br>
             <input type="password" name="contraseña" id="contraseña" required class="inputtext"

@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> <!-- configuracion de la pagina -->
-        <meta charset="UTF-8"><!-- leer los caracteres especiales -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registro</title>
-        <link rel="stylesheet" href="/css/style.css"><!-- linkenado css -->
-        <!--linkenado fuente google fonts(roboto400)-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-        <!-- linkenado los iconos-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    </head>
-    
+
+<head> <!-- configuracion de la pagina -->
+    <meta charset="UTF-8"><!-- leer los caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/style.css"><!-- linkenado css -->
+    <!--linkenado fuente google fonts(roboto400)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <!-- linkenado los iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
 <body>
     <header><!-- cabecera -->
         <div class="encabezado">
-            <img class="logoMl" src="/img/logo-mercado-liebre.svg" alt="imgLogo"><!-- logo -->
+            <a href="/" class="logoMl">
+                <img src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+            </a><!-- logo -->
             <div class="barraBusqueda"><!--lugar para poner la barra de busquda-->
                 <input type="text" placeholder="Buscar productos,marcas" id="inputBarraBusqueda">
                 <button id="lupa"><i class="fas fa-search"></i></button><!--icono lupa-->
@@ -48,19 +51,19 @@
     </header><!-- fin de la cabecera -->
     <main>
         <form action="/" class="formulario">
-        <h2 class="titulares">Ingresa</h2>
-        <input type="text" id="usuario" name="usuario" minlength="4"  required class="inputtext"
-        placeholder="Nombre de usuario" >
-    <br> <br>
-    <input type="text" id="contraseña" name="contraseña" maxlength="16" minlength="4" required
-        class="inputtext" placeholder="Contraseña"><br>
-    <br>
-    <div class="botonesRegister">
-        <button class="botonEnviar" id="ingresar">Ingresar</button>
-        <button><a href="/" class="botonEnviar">Cancelar</a>
-        </button>
-    </div>
-</form>
+            <h2 class="titulares">Ingresa</h2>
+            <input type="text" id="usuario" name="usuario" minlength="4" required class="inputtext"
+                placeholder="Nombre de usuario">
+            <br> <br>
+            <input type="text" id="contraseña" name="contraseña" maxlength="16" minlength="4" required class="inputtext"
+                placeholder="Contraseña"><br>
+            <br>
+            <div class="botonesRegister">
+                <button class="botonEnviar" id="ingresar">Ingresar</button>
+                <button><a href="/" class="botonEnviar">Cancelar</a>
+                </button>
+            </div>
+        </form>
     </main>
     <footer><!-- pie de la pagina -->
         <section>
@@ -89,4 +92,5 @@
         <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L </p>
     </footer>
 </body>
+
 </html>
