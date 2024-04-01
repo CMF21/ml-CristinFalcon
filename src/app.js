@@ -26,7 +26,7 @@ app.use(express.static(publicPath));
 
 //levantando el servidor
 const port = process.env.PORT|| 3001
-console.log(process.env.PORT);
+
 app.listen(port,()=>{
     console.log(`servidor corriendo en puerto ${port}`);
 })
